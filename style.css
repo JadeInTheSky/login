@@ -1,0 +1,74 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: gray;
+}
+.page-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+}
+.page-title {
+    top: 0;
+    height: 0 auto;
+    /*border: 2px solid black;*/
+    padding: 25px;
+    text-align: center;
+}
+.page-login, .page-register {
+    bottom: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
+}
+.page-login.active, .page-register.active {
+    display: grid;
+    place-items: center;
+}
+.page-login-boxes, .page-register-boxes {
+    top: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.page-login-boxes-username {
+    top: 0;
+    /*padding: 15px;
+    /*border: 2px solid black;*/
+    
+}.page-login-boxes-password {
+    bottom: 0;
+    /*padding: 15px;
+    /*border: 2px solid black;*/
+    
+}
+.page-login-button-container {
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+#txtbox-username {
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+#txtbox-password {
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+#database-successful {
+    color: green;
+}
+#database-failed {
+    color: red;
+}
